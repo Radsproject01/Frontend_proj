@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Practice page</title>
+</head>
+<body>
+<h1><b>Welcome to My Practice Page</b></h1>
+<p>This is going to be a paragraph from wiki about the pixel art:</p>
+<blockquote cite="https://en.wikipedia.org/wiki/Pixel_art">
+Pixel art is a form of digital art drawn with graphical software where images are built using pixels as the ony building block.
+It is widely associated with the low-resolution graphics from 8-bit and 16-bit era computers, arcade machines and video game consoles, in addition to other limited systems such as LED displays and graphing calculators, which have a limited number of pixels and colors available.
+The art form is still employed to this day by pixel artists and game studios, even though the technological limitations have since been surpassed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</bpdy>
+</html>

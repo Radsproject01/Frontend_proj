@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="background-color:#1B1212;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Pasta Recipes</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1B1212;
+      color: #F5F5DC;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-style: italic;
+      color: #FFFAF0;
+    }
+
+    img {
+      width: 60%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 20px;
+      z-index: 1;
+      position: relative;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      z-index: 1;
+      position: relative;
+    }
+
+    a {
+      color: #FFDAB9;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #FF7F50;
+      text-shadow: 0 0 8px #FF7F50;
+    }
+
+    sub {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.9rem;
+      color: #d2cfc7;
+      opacity: 0.8;
+    }
+
+    /* Sparkle background */
+    .sparkle-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: white;
+      box-shadow: 0 0 10px #fff, 0 0 20px #ffb6c1;
+      border-radius: 50%;
+      animation: sparkle-animation 3s infinite ease-in-out;
+    }
+
+    @keyframes sparkle-animation {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sparkles -->
+  <div class="sparkle-container">
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+  </div>
+
+  <!-- Main Content -->
+  <img src="pasta.png" alt="Pasta Image">
+  <h1><i>Delicious Pasta Recipes 🍝✨</i></h1>
+  <p>Explore a variety of pasta recipes that are easy to make and delicious to eat. From classic spaghetti to creamy fettuccine, there's something for everyone!</p>
+
+  <p>Fettuccine Alfredo 🍷🧈🧄: 
+    <a href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/" target="_blank">
+      <i>Click here for the recipe 🍝</i>
+    </a>
+    <sub><i>Goes well with a glass of wine! Cheers! 🍷</i></sub>
+  </p>
+
+  <p>Pesto Pasta 🌿🍀: 
+    <a href="https://www.recipetineats.com/pesto-pasta/" target="_blank">
+      <i>Click here for the recipe 🍝</i>
+    </a>
+    <sub><i>Don't forget to have a bruschetta! Don’t let the sauce go to waste!! 🥖</i></sub>
+  </p>
+
+  <p>Pasta Arrabiata 🌶️🔥🍅: 
+    <a href="https://www.vegrecipesofindia.com/pasta-arrabbiata-recipe/" target="_blank">
+      <i>Click here for the recipe 🍝</i>
+    </a>
+    <sub><i>Don’t forget the oregano!! 🌿</i></sub>
+  </p>
+
+  <!-- Sparkle Placement Script -->
+  <script>
+    const sparkles = document.querySelectorAll('.sparkle');
+    sparkles.forEach(sparkle => {
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.top = Math.random() * -100 + 'vh';
+      sparkle.style.animationDuration = (2 + Math.random() * 3) + 's';
+      sparkle.style.animationDelay = Math.random() * 2 + 's';
+    });
+  </script>
+</body>
+</html>
