@@ -1,0 +1,2 @@
+F:\My_local_repo\Frontend\Calculator_frontend\obj\Debug\Calculator_frontend.csproj.AssemblyReference.cache
+F:\My_local_repo\Frontend\Calculator_frontend\obj\Debug\Calculator_frontend.csproj.CoreCompileInputs.cache
